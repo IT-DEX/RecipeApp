@@ -1,38 +1,286 @@
-.App {
+body {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+/*-----------HOME----------------*/
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #9BA17B;
+}
+
+.link {
+  text-decoration: none;
+  padding: 15px 40px;
+  color: #3C4048;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: #E14D2A;
+  transition-duration: 2s;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #395144;
+}
+
+/*-----------NEWS----------------*/
+
+.news-container {
+  display: flex;
+  justify-content: center;
+}
+
+.news {
+  margin: 10px;
+  font-size: 13px;
+}
+
+.text-muted {
+  text-align: center;
+  
+}
+
+.news-title {
+  color: #E14D2A;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.news-link {
+  text-decoration: none;
+  text-align: center;
+  color: #395144;
+  font-weight: bold;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.news-link:hover {
+  color: #E14D2A;
+  transition-duration: 1s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*-----------CONTACTS----------------*/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.fill-in {
+  font-weight: bold;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+.contacts-info {
+  text-align: center;
+}
+
+.request {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+}
+
+#inputField {
+
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #E5EBB2;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+.label {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+#submitButton {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4E6C50;
+  color: beige;
+}
+
+.submitButton-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*-----------RECIPES----------------*/
+
+.img-background {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: fit-content;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.background {
+  background-repeat: repeat;
+}
+
+.recipes-info {
+  padding: 40px;
+}
+
+.searchField {
+  padding: 10px;
+  border: none;
+  width: 300px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #323335;
+  
+}
+
+.recipes-intro {
+  font-weight: bold;
+}
+
+
+/*-----------DISPLAYRECIPE----------------*/
+
+.display-recipe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;  
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+.container-recipe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;    
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+  width: 400px;
+}
+
+.recipe-image {
+  border: 5px solid #395144;
+  border-radius: 7px;
+}
+.recipe-label {
+  color: #395144;
+  text-align: center;
+} 
+
+.calories-info {
+  color: #395144;
+  font-weight: bold;
+}
+
+/*-----------LETTER-BUTTONS----------------*/
+
+.letterButton {
+  width: 70px;
+  padding: 15px;
+  margin: 10px 10px;
+  border: none;
+  background-color: #9BA17B;
+  color: #395144;
+  font-weight: bold;
+}
+
+.letterButtonOne {
+  width: 120px;
+  padding: 15px;
+  margin: 10px 10px;
+  border: none;
+  background-color: #9BA17B;
+  color: #395144;
+  font-weight: bold;
+}
+
+.buttons-container {
+  padding: 50px;
+}
+
+
+/*-----------INGREDIENTS----------------*/
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ingredient-card {
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+  width: 300px;
+  margin-top: 15px;
+  margin-right: 15px;
+  padding: 2%;
+  /*flex-grow: 1;*/
+  flex-basis: 16%;
+  align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ingredient-name {
+  color: #E14D2A;
+  text-align: center;
+}
+
+.ingredient-image {
+  border: 5px solid #395144;
+  border-radius: 7px;
+}
+
+.ingredient-description {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 5px;
+  width: 250px;
+}
+
+.showtext-btn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 13px;
+  color: #E14D2A;
 }
